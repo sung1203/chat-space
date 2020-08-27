@@ -23,13 +23,15 @@ Things you may want to cover:
 
 * ...
 
-# groups_usersテーブル
+#chat-space DB設計
+
+## groups_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-## Association
+### Association
 - belongs_to :group
 - belongs_to :user
