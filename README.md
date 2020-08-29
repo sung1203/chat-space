@@ -30,35 +30,35 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
-- has_many :posts
-- has_many :comments
+- belongs_to :groups
+- belongs_to :messages
 
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
+
 ### Association
 - belongs_to :user
 - has_many :comments
-- has_many  :tags,  through:  :posts_tags
-
-## commentsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|text|text|null: false|
-### Association
-- has_many :posts_tags
-- has_many  :posts,  through:  :posts_tags
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
+|image|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :post
+- belongs_to :groups
 - belongs_to :user
+
+## groupsテーブル
+|Column||Type|Options|
+|name|string|null: false|
+### Association
+- belongs_to :users
+- belongs_to :messages
