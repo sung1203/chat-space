@@ -35,11 +35,6 @@ Things you may want to cover:
 - belongs_to :groups
 - belongs_to :messages
 
-## postsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
