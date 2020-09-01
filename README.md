@@ -49,7 +49,7 @@ Things you may want to cover:
 - belongs_to :user
 
 ## groupsテーブル
-|Column||Type|Options|
+|Column|Type|Options|
 |-------|----|-------|
 |name|string|null: false|
 ### Association
