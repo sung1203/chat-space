@@ -32,13 +32,8 @@ Things you may want to cover:
 |password|string|null: false|
 |name|string|null: false|
 ### Association
-- belongs_to :groups
-- belongs_to :messages
-
-
-### Association
-- belongs_to :user
-- has_many :comments
+- has_many :groups
+- has_many :messages
 
 ## messagesテーブル
 |Column|Type|Options|
@@ -55,5 +50,5 @@ Things you may want to cover:
 |Column||Type|Options|
 |name|string|null: false|
 ### Association
-- belongs_to :users
-- belongs_to :messages
+- belongs_to :user
+- has_many :messages
