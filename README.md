@@ -50,7 +50,7 @@ Things you may want to cover:
 
 ## groupsテーブル
 |Column||Type|Options|
-|------|-----|-------|
+|-------|-----|-------|
 |name|string|null: false|
 ### Association
 - belongs_to :user
