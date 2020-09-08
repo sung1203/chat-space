@@ -2,19 +2,19 @@
   box-sizing: border-box;
 }
 
-.Wrapper{
+.Wrapper {
   display: flex;
 }
 
-.SideBer{
+.SideBar {
   color: #fff;
-  width: 300px
+  width: 300px;
 }
 
-.LeftHeader{
+.LeftHeader {
   background-color: #253141;
   height: 100px;
-  padding: 0 20px;
+  padding: 0 20px;    
   display: flex;
   align-items: center;
   &__list{
@@ -31,28 +31,28 @@
     display: flex;
     justify-content: end;
   }
-  &__Icon{
+  &__Icon {
     margin-left: 5px;
-    a{
-     color: #fff;
-     font-size: 16px;
+    a {
+      color: #fff;
+      font-size: 16px;
     }
   }
 }
 
 .GroupList {
   background-color: #2f3e51;
-  height: calc(100vh - 100px);
-  padding: 0 20px;
-  overflow: scroll;
+  height:  calc(100vh  -  100px);
+  padding:  0  20px;
+  overflow:  scroll;
 }
 
 .Group {
   box-sizing: border-box;
-  padding: 20px 0 40px;
+  padding:  20px  0 40px;
 
   a {
-    color: fff;
+    color: #fff;
     text-decoration: none;
   }
   &__name {
@@ -65,13 +65,13 @@
 }
 
 .Chat {
-  width: calc(100vw - 300px);
+  width:  calc(100vw - 300px);
 }
 
 .RightHeader {
   height: 100px;
   padding: 0 40px;
-  border-bottom: solid 1px #eee;
+  border-bottom: solid  1px #eee;
   display: flex;
   justify-content: space-between;
   &__groupName {
@@ -92,7 +92,7 @@
     display: block;
     border: 1px solid #38AEF0;
     color: #38AEF0;
-    height: 1px solid #38AEF0;
+    height: 40px;
     line-height: 40px;
     margin-top: 28px;
     padding: 0 20px;
@@ -104,7 +104,7 @@
   background-color: #fafafa;
   box-sizing: border-box;
   padding: 35px 40px 0;
-  height: calc(100vh - 100px -90px);
+  height: calc(100vh - 100px - 90px);
   overflow: scroll;
 }
 
